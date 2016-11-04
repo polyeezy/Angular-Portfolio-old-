@@ -1,0 +1,72 @@
+.full-height
+{
+ min-height: 90vh;
+}
+
+.tumblrBackground
+{
+  background-color: #37465C;
+}
+
+.tumblrColor
+{
+  color: #37465C;
+}
+
+.instagramBackground
+{
+  background-color: #8940B6;
+}
+
+
+.margin-top
+{
+  margin-top: 70px !important;
+}
+
+.handwritten
+{
+  font-family: Amatic !important;
+}
+
+@font-face {
+    font-family: Amatic;
+    src: url('../fonts/Amatic-Bold.ttf');
+}
+
+#nav-container
+{
+  position: absolute !important;
+}
+
+.topped-nav
+{
+  margin-top: -64px !important;
+}
+
+.add-pad
+{
+  padding-top : -64px !important;
+
+}
+
+#intro
+{
+  padding-top : -64px !important;
+}
+
+.hidden{
+  opacity: 0 !important;
+}
+
+.workflow
+{
+  background-image: url('../img/workflow.jpg');
+  background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}

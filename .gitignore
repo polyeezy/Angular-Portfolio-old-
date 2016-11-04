@@ -1,8 +1,2 @@
 .DS_Store
 node_modules
-app/components
-app/controllers
-app/directives
-app/factories
-app/app.js
-css/style.css
