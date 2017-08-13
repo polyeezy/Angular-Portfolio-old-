@@ -1,6 +1,6 @@
 {
   "name": "www.valerianpolizzi.fr",
-  "version": "0.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prod"  : "ng build && node index.js"
   },
   "private": true,
   "dependencies": {
@@ -23,11 +24,15 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular-cli": "^1.0.0-beta.28.3",
     "animate.css": "^3.5.2",
     "core-js": "^2.4.1",
+    "express": "^4.15.4",
     "hammerjs": "^2.0.8",
+    "http": "0.0.0",
     "jquery": "^3.2.1",
     "parallax-js": "git+https://github.com/wagerfield/parallax.git",
+    "path": "^0.12.7",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.14"
   },
@@ -52,5 +57,23 @@
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polyeezy/www.valerian-polizzi.fr.git"
+  },
+  "keywords": [
+    "Valerian",
+    "Polizzi",
+    "Portfolio",
+    "material",
+    "flat"
+  ],
+  "author": "Valérian Polizzi",
+  "bugs": {
+    "url": "https://github.com/polyeezy/www.valerian-polizzi.fr/issues"
+  },
+  "homepage": "https://github.com/polyeezy/www.valerian-polizzi.fr#readme"
 }
