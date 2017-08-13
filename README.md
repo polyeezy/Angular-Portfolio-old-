@@ -1,2 +1,0 @@
-## Credits
-  Valérian Polizzi

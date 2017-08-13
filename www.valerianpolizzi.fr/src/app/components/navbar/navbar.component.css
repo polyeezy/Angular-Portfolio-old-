@@ -1,0 +1,69 @@
+@font-face {
+  font-family: Amatic;
+  src: url('../../../assets/fonts/Amatic-Bold.ttf');
+}
+
+#hotdog{
+  position: absolute;
+  height: 400px;
+  top: 10px;
+  left: -70px;
+}
+
+#logo:hover{
+  cursor: pointer;
+}
+
+.rotate{
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+.handwritten{
+  font-family: Amatic;
+}
+
+#namefromleft{
+  font-family: Roboto;
+}
+
+.half-section{
+  min-height: 50vh;
+}
+
+.profile-card img{
+  margin: 20px;
+}
+
+.titles{
+  z-index: 9999;
+  padding-top: 50px;
+}
+
+.profile-card{
+  min-height: 50vh;
+  position: relative;
+  top: 100px;
+  z-index: 0;
+}
+
+.frontpage{
+  min-height: 75vh;
+  overflow: hidden;
+}
+
+.frontpage .section{
+  max-width: 100%;
+}
+
+.tabs{
+  margin-top: 20px;
+}
