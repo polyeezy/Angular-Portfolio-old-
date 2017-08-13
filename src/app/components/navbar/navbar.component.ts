@@ -25,7 +25,6 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-
     this.audio =  new Audio('assets/mp3/hotdog.mp3');
 
   }
