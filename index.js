@@ -7,12 +7,19 @@ const http = require('http');
 const app = express();
 
 // Point static path to dist
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'dit')));
 
 
 // Catch all other routes and return the index file
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/index.html'));
+app.get('*', function(req, res){
+  res.sendFile(path.join(__dirname, 'dist/index.html'), null, function (err) {
+    if (err) {
+      res.sendFile(path.join(__dirname, 'src/maintenance.html');
+    }
+    else {
+      console.log('Sent:', fileName);
+    }
+  });
 });
 
 /**
