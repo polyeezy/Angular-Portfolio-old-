@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'dit')));
 app.get('*', function(req, res){
   res.sendFile(path.join(__dirname, 'dist/index.html'), null, function (err) {
     if (err) {
-      res.sendFile(path.join(__dirname, 'src/maintenance.html');
+      res.sendFile(path.join(__dirname, 'src/maintenance.html'));
     }
     else {
       console.log('Sent:', fileName);
