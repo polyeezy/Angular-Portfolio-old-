@@ -8,6 +8,7 @@ import { FrontpageComponent } from './pages/frontpage/frontpage.component';
 import { TimelineComponent } from './pages/timeline/timeline.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SocialComponent } from './pages/social/social.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   {
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
     FrontpageComponent,
     TimelineComponent,
     AboutComponent,
-    SocialComponent
+    SocialComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
