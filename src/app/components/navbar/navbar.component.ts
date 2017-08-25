@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { jQuery } from 'jquery';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
 
-  public showHotdog (){
+  public showHotdog () {
 
     this.hotdog = !this.hotdog;
 

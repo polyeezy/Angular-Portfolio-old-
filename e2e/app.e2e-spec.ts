@@ -1,14 +1,14 @@
-import { Www.Valerianpolizzi.FrPage } from './app.po';
+import { MyappPage } from './app.po';
 
-describe('www.valerianpolizzi.fr App', () => {
-  let page: Www.Valerianpolizzi.FrPage;
+describe('myapp App', () => {
+  let page: MyappPage;
 
   beforeEach(() => {
-    page = new Www.Valerianpolizzi.FrPage();
+    page = new MyappPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
