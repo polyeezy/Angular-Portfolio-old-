@@ -6,7 +6,7 @@
 #hotdog{
   position: absolute;
   height: 400px;
-  top: 10px;
+  top: -10px;
   left: -70px;
 }
 
@@ -66,4 +66,8 @@
 
 .tabs{
   margin-top: 20px;
+}
+
+#title-tabs{
+  margin-top: 80px;
 }

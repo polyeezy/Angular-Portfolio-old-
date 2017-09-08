@@ -1,0 +1,24 @@
+.skill{
+  height: 230px;
+  width: 200px;
+  padding-bottom: 30px;
+}
+
+#skills{
+  padding-bottom: 30px;
+}
+
+.skill img{
+  height: 200px;
+  width: 200px;
+}
+
+.skill span{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.row{
+  margin-bottom: 0;
+}

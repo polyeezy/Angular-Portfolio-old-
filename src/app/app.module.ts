@@ -9,6 +9,8 @@ import { TimelineComponent } from './pages/timeline/timeline.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SocialComponent } from './pages/social/social.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const appRoutes: Routes = [
   {
@@ -17,7 +19,7 @@ const appRoutes: Routes = [
     data: {
       meta: {
         title: 'Valérian Polizzi',
-        description: 'Welcome to Valérian Polizzi\'s website'
+        description: 'Digital Manufacturer'
       }
     }
   },
@@ -26,8 +28,8 @@ const appRoutes: Routes = [
     component: AboutComponent,
     data: {
       meta: {
-        title: 'About Valérian Polizzi',
-        description: 'Valérian Polizzi (/vəˈlɪriːən/, known as Polyeezy on social medias, born April 7, 1994) is a developper. Born in Cagnes-sur-Mer and raised in Biot, Valérian attended Epitech Computer Software Engineering (2013) ...'
+        title: 'Valérian Polizzi - Aboutd',
+        description: 'About Valérian Polizzi'
       },
     }
   },
@@ -36,12 +38,28 @@ const appRoutes: Routes = [
     data: {
       meta: {
         title: 'Timeline',
-        description: 'Navigate on what Valérian Polizzi accomplished'
+        description: 'Valérian\'s Timeline'
       },
     }
   },
-  { path: 'social', component: SocialComponent },
-
+  { path: 'skills',
+    component: SkillsComponent,
+    data: {
+      meta: {
+        title: 'Skills',
+        description: 'What Valérian learned'
+      },
+    }
+  },
+  { path: 'contact',
+    component: ContactComponent,
+    data: {
+      meta: {
+        title: 'Contact',
+        description: 'Reach Valérian'
+      },
+    }
+  },
 ];
 
 
@@ -53,7 +71,9 @@ const appRoutes: Routes = [
     TimelineComponent,
     AboutComponent,
     SocialComponent,
-    FooterComponent
+    FooterComponent,
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

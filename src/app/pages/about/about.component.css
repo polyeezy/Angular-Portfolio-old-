@@ -4,6 +4,7 @@
 
 .wiki .desc{
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .wiki .card{
@@ -54,4 +55,31 @@
 
 .infos{
   margin-top: 40px;
+}
+
+.chip:hover{
+  cursor: pointer;
+}
+
+.related{
+  height: 230px;
+  width: 200px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#related, #social{
+  padding-bottom: 30px;
+}
+
+.related img{
+  height: 200px;
+  width: 200px;
+}
+
+.related span{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }

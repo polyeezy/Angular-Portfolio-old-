@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { jQuery } from 'jquery';
-
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-navbar',
@@ -11,22 +11,21 @@ export class NavbarComponent implements OnInit {
 
   public  hotdog = false;
   public audio;
-
+  public currentURL = '';
 
   constructor() { }
 
 
-  public showHotdog () {
 
+  public ShowHotdog () {
     this.hotdog = !this.hotdog;
-
     this.hotdog ? this.audio.play() : this.audio.pause();
-    this.hotdog ? jQuery('#logo').addClass('rotate') : jQuery('#logo').removeClass('rotate');
-
+    this.hotdog ? $('#logo').addClass('rotate') : $('#logo').removeClass('rotate');
   }
 
   ngOnInit() {
     this.audio =  new Audio('assets/mp3/hotdog.mp3');
+    this.currentURL = window.location.href;
 
   }
 
