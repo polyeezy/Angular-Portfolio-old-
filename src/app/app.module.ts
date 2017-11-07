@@ -11,6 +11,7 @@ import { SocialComponent } from './pages/social/social.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { WorkflowComponent } from './pages/workflow/workflow.component';
 
 const appRoutes: Routes = [
   {
@@ -51,12 +52,12 @@ const appRoutes: Routes = [
       },
     }
   },
-  { path: 'contact',
-    component: ContactComponent,
+  { path: 'workflow',
+    component: WorkflowComponent,
     data: {
       meta: {
-        title: 'Contact',
-        description: 'Reach Valérian'
+        title: 'Workflow',
+        description: 'Workflow'
       },
     }
   },
@@ -73,7 +74,8 @@ const appRoutes: Routes = [
     SocialComponent,
     FooterComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+    WorkflowComponent
   ],
   imports: [
     BrowserModule,
