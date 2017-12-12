@@ -1,0 +1,52 @@
+#navbar{
+    min-height: 150px;
+}
+
+h1{
+    padding-top: 30px;
+}
+
+
+h5{
+    font-size: 14px;
+    margin-top: 0 !important;
+    margin-bottom: 0!important;
+}
+
+#navbar #navbar-header{
+    min-height: 150px;
+    padding-top: 75px;
+}
+
+#subtitle{
+    line-height: 75px;
+}
+
+.tabs{
+    margin-top: 10px;
+}
+
+#navbar #navbar-footer{
+    min-height: 75px;
+}
+
+.tabs{
+    background: none !important;
+}
+
+.navigation-item{
+    line-height: 50px;
+}
+
+#title{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#photo{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 75px;
+}

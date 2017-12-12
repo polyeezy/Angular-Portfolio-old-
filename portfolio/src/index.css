@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.bolder{
+  font-weight: bolder;
+}
+
+.app-card{
+  border-radius: 15px;
+  height: 300px;
+  padding-top: 250px;
+  margin-bottom: 25px;
+
+}
+
+.app-card span{
+  font-size: 22px;
+  margin-top: 100px !important;
+}
+
+#stevejobs{
+  background: url('http://www.valerianpolizzi.fr/assets/img/steve-jobs.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Kanye{
+  background: url('http://www.valerianpolizzi.fr/assets/img/kanye-west.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Elon{
+  background: url('http://www.valerianpolizzi.fr/assets/img/elon-musk.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
