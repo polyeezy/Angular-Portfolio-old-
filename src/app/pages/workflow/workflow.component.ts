@@ -14,14 +14,25 @@ export class WorkflowComponent implements OnInit {
 
   ngOnInit() {
 
-    console.log('init');
+    function resizeCards(){
+      var max = 0;
 
-    $.getJSON('http://workflow.valerianpolizzi.fr/assets/projects.json', function( data ) {
+      $('.project-content').each(function(index){
+        max = max < $(this).height() ? $(this).height() : max;
+      });
 
-      console.log(data);
+      $('.project-content').each(function(index){
+        $(this).height(max);
+      });
+    }
+
+    $( document ).ready(function() {
+      resizeCards();
+    });
+    $.getJSON("http://workflow.valerianpolizzi.fr/assets/projects.json", function( data ) {
 
       data.projects.forEach(function(elem){
-        var myvar = '<div class="col m4 s12 project">'+
+        var myvar = '<div class="col m4 s8 offset-s2 project">'+
           '                <div class="card ">'+
           '                    <div class="card-image waves-effect waves-block waves-light hoverable">'+
           '                        <img class="activator " src="'+ elem.image + '">'+
